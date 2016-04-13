@@ -168,15 +168,6 @@ endfunction
 		endif
 
 
-	""
-	"" Pig filetype
-	""     -> Pig syntax
-	""
-		Bundle 'vim-scripts/pig.vim'
-		augroup filetypedetect
-			au BufNewFile,BufRead *.pig set filetype=pig syntax=pig
-		augroup END
-
 	"" Clang Complete
 	""     -> Clang C++ completion
 	""
@@ -193,27 +184,6 @@ endfunction
 		au FileType hpp nmap <leader>s :call SwitchSourceHeader()<CR>
 
 
-
-	"" YouCompleteMe
-	""     -> Detects when to trigger auto complete automatically
-	""   !Warning! May clash with clang complete according to their website??
-	""
-		Bundle 'Valloric/YouCompleteMe'
-		let g:ycm_autoclose_preview_window_after_insertion = 1 " Auto close after inserted (smarter than default vim)
-
-	"" Go support
-	""     -> Go support, see https://github.com/fatih/vim-go for help
-	""
-		Bundle 'fatih/vim-go'
-		augroup filetypedetect
-			au BufNewFile,BufRead *.go set filetype=go syntax=go
-		augroup END
-		au FileType go nmap <leader>r <Plug>(go-run)
-		au FileType go nmap <leader>d <Plug>(go-def)
-		au FileType go nmap <leader>b <Plug>(go-build)
-		au FileType go nmap <leader>t <Plug>(go-test)
-		au FileType go nmap <leader>i <Plug>(go-info)
-		au FileType go nmap <leader>m :!make<CR>
 
 	"" Multiple-cursors
 	""    -> Ctrl-n on a word and then ctrl-n to select next, next, next and do
