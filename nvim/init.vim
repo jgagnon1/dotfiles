@@ -29,7 +29,11 @@ call plug#begin('~/.vim/plugged')
   let g:miniBufExplUseSingleClick = 1
   Plug 'fholgado/minibufexpl.vim'
 
-  Plug 'leafgarland/typescript-vim'
+  " Tabular
+  Plug 'godlygeek/tabular'
+
+  " Markdown
+  Plug 'gabrielelana/vim-markdown'
 
 call plug#end()
 
