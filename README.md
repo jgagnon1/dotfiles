@@ -3,13 +3,15 @@ Checkout
 ========
 	git clone --recursive https://github.com/jgagnon1/dotfiles.git ~/.dotfiles
 
+NeoVIM setup
+=========
+	ln -s ~/.dotfile/.nvim ~/.config/nvim
+
 VIM setup
 =========
 	ln -s ~/.dotfiles/.vim ~/.vim
 	ln -s ~/.dotfiles/.vimrc ~/.vimrc
 	vim +BundleInstall +qall
-	cd ~/.vim/bundle/YouCompleteMe/
-	./install.sh   (you may need to install cmake & python-dev)
 
 ZSH setup
 =========
