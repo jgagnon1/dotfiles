@@ -5,7 +5,7 @@ Checkout
 
 NeoVIM setup
 =========
-	ln -s ~/.dotfile/.nvim ~/.config/nvim
+	ln -s ~/.dotfiles/nvim ~/.config/nvim
 
 VIM setup
 =========
