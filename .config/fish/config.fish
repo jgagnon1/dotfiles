@@ -1,5 +1,5 @@
 # Set PATH
-set -gx PATH /Users/jeromegagnon/Library/Python/3.7/bin /Applications/Wireshark.app/Contents/MacOS $PATH
+set -gx PATH $HOME/Library/Python/3.7/bin $HOME/.cargo/bin $PATH
 
 # Aliases
 alias vim='nvim'
