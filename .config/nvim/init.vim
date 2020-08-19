@@ -12,6 +12,9 @@ call plug#begin('~/.vim/plugged')
   " Typescript
   Plug 'leafgarland/typescript-vim'
 
+  " Jsonnet
+  Plug 'google/vim-jsonnet'
+
   " Ctrl + P
   Plug 'ctrlpvim/ctrlp.vim'
   " {{{
