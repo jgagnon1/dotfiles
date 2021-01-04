@@ -13,6 +13,7 @@ set -g theme_color_scheme gruvbox
 
 # Terraform alias
 alias t terraform
+alias ts tfswitch
 
 # Kubectl alias
 alias k kubectl
@@ -52,3 +53,11 @@ alias krh 'k rollout history'
 alias krsd 'k rollout status deployment'
 alias kru 'k rollout undo'
 alias ksd 'k scale deployment'
+
+source /usr/local/opt/asdf/asdf.fish
+
+# Fixes macOS slow tab completion
+# See https://github.com/fish-shell/fish-shell/issues/6270
+if test (uname) = Darwin
+  function __fish_describe_command; end
+end
