@@ -1,5 +1,5 @@
 # Set PATH
-set -gx PATH $HOME/.cargo/bin /usr/local/go/bin /usr/local/opt/gnu-tar/libexec/gnubin $PATH
+set -gx PATH $HOME/.cargo/bin $HOME/go/bin /usr/local/go/bin /usr/local/opt/gnu-tar/libexec/gnubin $PATH
 
 # Aliases
 alias vim='nvim'
@@ -15,6 +15,7 @@ set -g theme_color_scheme gruvbox
 abbr t terraform
 abbr ts tfswitch
 abbr tsi 'tfswitch && terraform init'
+abbr tsip 'tfswitch && terraform init && terraform plan'
 
 test -f /usr/local/opt/asdf/asdf.fish && source /usr/local/opt/asdf/asdf.fish
 test -f ~/.kubectl_aliases.fish && source ~/.kubectl_aliases.fish
