@@ -1,5 +1,5 @@
 # Set PATH
-set -gx PATH $HOME/.cargo/bin $HOME/go/bin /usr/local/go/bin /usr/local/opt/gnu-tar/libexec/gnubin $PATH
+set -gx PATH $HOME/.cargo/bin $HOME/go/bin /usr/local/go/bin /usr/local/opt/gnu-tar/libexec/gnubin $HOME/.krew/bin $PATH 
 
 # Aliases
 alias vim='nvim'
