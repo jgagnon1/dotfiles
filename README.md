@@ -6,7 +6,7 @@ Tracks `nixpkgs-unstable`. Supports macOS (`aarch64-darwin` / `x86_64-darwin`).
 ## File structure
 
 ```
-nix/
+~/
 ├── flake.nix                        # Inputs and flake-parts outputs
 ├── flake.lock                       # Pinned inputs — commit this
 ├── darwin/
@@ -88,7 +88,7 @@ nix/
 ## First-time setup
 
 ```sh
-cd ~/.dotfiles/nix
+cd ~/.dotfiles
 
 # Bootstrap nix-darwin using the hostname as the configuration name
 nix run nix-darwin -- switch --flake ".#$(hostname -s)"
@@ -110,7 +110,7 @@ drup  # nix flake update then drs
 Or manually:
 
 ```sh
-darwin-rebuild switch --flake "$HOME/.dotfiles/nix#$(hostname -s)"
+darwin-rebuild switch --flake "$HOME/.dotfiles#$(hostname -s)"
 ```
 
 ### Add a Nix package
