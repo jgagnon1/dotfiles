@@ -11,6 +11,7 @@
     casks = [
       { name = "ghostty"; }
       { name = "claude"; }
+      { name = "spotify"; }
     ];
   };
 }

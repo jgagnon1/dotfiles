@@ -60,6 +60,7 @@ Tracks `nixpkgs-unstable`. Supports macOS (`aarch64-darwin` / `x86_64-darwin`).
 |------|-------------|
 | `ghostty` | GPU-accelerated terminal emulator |
 | `claude` | Claude desktop app |
+| `spotify` | Music streaming client |
 
 > Casks not listed in `apps.nix` are automatically removed on the next rebuild (`cleanup = "zap"`).
 
