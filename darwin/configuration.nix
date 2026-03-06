@@ -7,7 +7,10 @@
   ];
 
   # Touch ID for sudo via sudo_local (persists across macOS updates)
-  security.pam.services.sudo_local.touchIdAuth = true;
+  security.pam.services.sudo_local = {
+    touchIdAuth = true;
+    reattach = true; # enables pam_reattach for Touch ID in tmux
+  };
 
   # Required: declare the user that home-manager will manage
   users.users.jgagnon = {
