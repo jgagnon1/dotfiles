@@ -10,6 +10,11 @@
     rsync                       # file sync/transfer
   ];
 
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true; # faster nix shell integration
+  };
+
   programs.neovim = {
     enable = true;
     defaultEditor = true;
