@@ -11,6 +11,7 @@
     shellInit = ''
       fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
       mise activate fish | source
+      set -gx DOCKER_HOST "unix://$HOME/.colima/default/docker.sock"
     '';
     shellAliases = {
       drs = "sudo darwin-rebuild switch --flake \"$HOME/.dotfiles/nix#\"(hostname -s)";
