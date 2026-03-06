@@ -1,5 +1,19 @@
 { pkgs, ... }:
 
+let
+  tmux-monokai-pro = pkgs.tmuxPlugins.mkTmuxPlugin {
+    pluginName = "monokai-pro";
+    version = "69e378e";
+    rtpFilePath = "monokai.tmux";
+    src = pkgs.fetchFromGitHub {
+      owner = "maxpetretta";
+      repo = "tmux-monokai-pro";
+      rev = "69e378e955ccd9afcb8ad1aa4011f71c80b892d9";
+      sha256 = "1qw6gb0qgah0sy50205q2wvl16fvsfirwynvy5m32f5npcp02l1f";
+    };
+  };
+in
+
 {
   programs.tmux = {
     enable = true;
@@ -12,6 +26,7 @@
     baseIndex = 1;
     plugins = with pkgs.tmuxPlugins; [
       resurrect
+      tmux-monokai-pro
     ];
     extraConfig = ''
       # Explicitly set prefix (C-b is default but must be set to override any previous config)
