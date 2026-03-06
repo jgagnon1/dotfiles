@@ -48,6 +48,10 @@ in
 
       # Copy to OS clipboard (macOS)
       bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "pbcopy"
+
+      # Show current directory as tab name instead of process name
+      set -g automatic-rename on
+      set -g automatic-rename-format '#{b:pane_current_path}'
     '';
   };
 }
