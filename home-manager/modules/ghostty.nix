@@ -4,7 +4,7 @@
   xdg.configFile."ghostty/config".text = ''
     # See: https://ghostty.org/docs/config/reference
     # and: ghostty +list-themes
-    theme = dark:Catppuccin Mocha,light:Catppuccin Latte
+    theme = dark:Monokai Pro,light:Monokai Pro Light
 
     font-family = FiraCode Nerd Font Mono
     font-size = 16

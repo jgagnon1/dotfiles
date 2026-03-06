@@ -5,6 +5,7 @@
     ./modules/base.nix
     ./modules/fish.nix
     ./modules/git.nix
+    ./modules/ghostty.nix
     ./modules/tmux.nix
   ];
 
