@@ -3,6 +3,7 @@
 {
   imports = [
     ./modules/base.nix
+    ./modules/claude.nix
     ./modules/fish.nix
     ./modules/git.nix
     ./modules/ghostty.nix
