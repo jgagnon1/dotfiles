@@ -256,7 +256,7 @@ jj split                                  # Split into smaller commits
 ```bash
 # Single PR
 jj bookmark create feature-name
-jj git push --bookmark feature-name --allow-new
+jj git push --bookmark feature-name
 
 # PR Stack
 jj bookmark create part-1 -r <change-id-1>
