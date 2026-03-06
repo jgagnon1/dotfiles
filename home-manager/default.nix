@@ -7,6 +7,7 @@
     ./modules/fish.nix
     ./modules/git.nix
     ./modules/ghostty.nix
+    ./modules/jujutsu.nix
     ./modules/tmux.nix
   ];
 
