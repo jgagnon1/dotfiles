@@ -26,6 +26,7 @@
       gpg.format = "ssh";
       "gpg \"ssh\"".program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
       commit.gpgsign = true;
+      "url \"git@github.com:\"".insteadOf = "https://github.com/";
     };
   };
 }
